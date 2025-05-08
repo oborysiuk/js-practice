@@ -6,7 +6,7 @@ function checkOrder (available, ordered){
     else if (available < ordered){
         result = 'Your order is too large, we don’t have enough goods.';
     }
-    else if (available => ordered){
+    else if (available >= ordered){
         result = 'Your order is accepted';
     }
     return result;
